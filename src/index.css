@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  background-color: black;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.cartwidget {
+  background-color: rgb(24, 24, 24);
+  padding: 1rem;
+  opacity: 0.9;
+  border-radius: 40%;
+}
+
+.cartwidget *{
+  padding-inline: 0.5rem;
+}
+
+.cart {
+  cursor: pointer;  
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 175, 175);
+  width: 15rem;
+  height: 19rem;
+  border: 2px solid rgb(104, 104, 104);
+  border-radius: 5px;
+  box-shadow: 0.75rem 0.75rem 0.125rem 0.063rem #dfdfdf;
+}
+
+.item-image {
+  width: 60%;
+  cursor: pointer;
+}
+
+.item-info {
+  text-align: center;
+  width: 100%;
+  border-top: 2px solid rgb(104, 104, 104);;
+}
+
+.item-title {
+  font-size: 1rem;
+}
+.item-text,
+.item-price {
+  font-size: 0.75rem;
+}
